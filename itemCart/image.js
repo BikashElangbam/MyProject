@@ -1,38 +1,44 @@
-function shoppingCart(item, picture, amount){
+function shoppingCart(id, picture, item, amount){
+
     const itemContainer = document.querySelector('.itemContainer');
-    const imageID = document.createElement('h3');
+    itemContainer.setAttribute('class','itemContainer');
+    const itemID = document.createElement('h3');
     const image = new Image();
     image.setAttribute('class','img');
-    const itemName = document.createElement('h2');
-    const price = document.createElement('h2');
+    const itemName = document.createElement('h3');
+    const price = document.createElement('h3');
     const itemDetails = document.createElement('p');
     itemDetails.setAttribute('class', 'container');
     const cartButton = document.createElement('button');   
     cartButton.setAttribute('class', 'btn'); 
     cartButton.innerHTML = "ADD TO CART"; 
         
-   
+    itemID.innerHTML = id;
     image.src=picture;
     itemName.innerHTML = item;
     price.innerHTML = "$"+amount;
         
-    itemContainer.setAttribute('class','itemContainer');
+    itemDetails.appendChild(image);
     itemDetails.appendChild(itemName);
     itemDetails.appendChild(price);
     itemDetails.appendChild(cartButton);
-    itemContainer.appendChild(image);
     itemContainer.appendChild(itemDetails);   
-    
 }
-
-shoppingCart(
-    "Check Print Shirt", 
-    "https://guesseu.scene7.com/is/image/GuessEU/M63H24W7JF0-L302-ALTGHOST?wid=1500&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
-    "110"
-);    
-      
- 
    
+let itemID;
+let itemImage;
+let itemName;
+let itemPrice;
+import data from './data.json' assert {type:'json'}; 
+data.forEach((value) => {
+    itemID = value.id;
+    itemImage = value.imgUrl;
+    itemName = value.name;
+    itemPrice = value.price;
+    shoppingCart(itemID,itemImage,itemName,itemPrice);
+});
+
+
         
 
    
