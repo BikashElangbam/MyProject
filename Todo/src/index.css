@@ -1,0 +1,188 @@
+body {
+  padding: 50px;
+  background-color: #66CCFF;
+  font-family: sans-serif;
+}
+
+/* 
+
+.todoListMain .header input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #FFF;
+  width: 165px;
+}
+
+.todoListMain .header button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  margin-right: 0px;
+  background-color: #0066FF;
+  color: #FFF;
+  border: 2px solid #0066FF;
+}
+
+.todoListMain .header button:hover {
+  background-color: #003399;
+  border: 2px solid #003399;
+  cursor: pointer;
+}
+
+.todoListMain .theList {
+  list-style: none;
+  color: red;
+  padding-left: 0;
+  width: 250px;
+}
+
+.todoListMain .theList li {
+  color: #333;
+  background-color: rgba(255, 255, 255, .5);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  list-style: none;
+}
+
+ul.theList {
+  padding: 0;
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+
+.theList li {
+  color: #333;
+  background-color: rgba(255, 255, 255, .5);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  transition: background-color .2s ease-out;
+}
+
+.todoListMain .theList li:hover {
+  background-color: pink;
+  cursor: pointer;
+}
+
+ ul.theList li:hover{
+	background-color: red;
+	color: #ffffff;
+	cursor: pointer;
+} */
+
+.todoApp{
+  background-color: white;
+  justify-content: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  width:300px;
+  font-weight: bold;
+}
+.container {
+  
+  display: flex;
+  justify-content: left;
+  padding: 10px;
+  column-gap: 5px;  
+}
+
+.textInput{
+  padding: 10px;
+  font-family:sans-serif;
+}
+.btnAdd{
+  font-weight: bold;
+  background-color: blueviolet;
+  padding: auto;
+  border: none;
+  border-radius: 5px;
+  color:white;
+  width: 48px;
+  
+}
+.btnDelete{
+  font-weight: bold;
+  background-color: rgb(236, 65, 65);
+  padding: auto;
+  color:white;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+  
+  
+}
+.btnClearAll{
+  font-weight: bold;
+  background-color: blueviolet;
+  padding: auto;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  height: 35px;
+  
+}
+.todoList{
+  color: black;
+  display: flex;
+  column-gap: 3px;
+  background-color: rgba(238, 234, 234, 0.5);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  list-style: none
+}
+.todoList:hover .btnDelete{
+  display: block;
+}
+.footer{
+  display: inline-flex;
+  justify-content: center;
+  column-gap: 10px;
+  padding: 5px;
+  
+  
+}
+
+.itemList{
+  position:relative;
+  text-align: left;
+  padding: 0;
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+input[type="text"]{
+  background: transparent;
+  color:rgb(3, 3, 3);
+  text-align: left;
+  border-radius: 5px;
+  border-color: darkgray;
+}
+h4{
+  font-size: 14px;
+}
+
+.keys{
+  display: flex;
+  column-gap: 20px;
+  height: 200px;
+  width: 600px;
+  background-color:darkgrey;
+  justify-content:center;
+  padding: 50px;
+  }
+
+  h3{
+    background-color: aliceblue;
+    width: 120px;
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+  }
